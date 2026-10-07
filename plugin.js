@@ -1587,7 +1587,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1633,7 +1633,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1679,7 +1679,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1725,7 +1725,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1771,7 +1771,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1817,7 +1817,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1863,7 +1863,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1909,7 +1909,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": false,
       "requestCountField": "request_count",
@@ -1955,7 +1955,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -2001,7 +2001,7 @@ const PROFILE = {
       "qualityValue": "medium",
       "sendQuality": false,
       "sendSeconds": false,
-      "secondsUpstream": "off",
+      "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -2369,7 +2369,7 @@ function suffixFor(aspect, style) {
 }
 function secondsUpstreamMode(row) {
   const mode = row && row.secondsUpstream;
-  if (mode === "model" || mode === "field" || mode === "off") return mode;
+  if (mode === "passthrough" || mode === "model" || mode === "field" || mode === "off") return mode;
   if (row && row.duration) return "model";
   if (row && row.sendSeconds) return "field";
   return "off";
@@ -3037,8 +3037,13 @@ function writeResponseFormat(body, req) {
     body.response_format = trimmed(req.response_format);
   }
 }
-function writeOutgoingSeconds(body, row, seconds) {
+function writeOutgoingSeconds(body, row, seconds, req) {
   const mode = secondsUpstreamMode(row);
+  if (mode === "passthrough") {
+    if (req && Object.prototype.hasOwnProperty.call(req, "seconds")) body.seconds = req.seconds;
+    if (req && Object.prototype.hasOwnProperty.call(req, "duration")) body.duration = req.duration;
+    return;
+  }
   if (mode === "model") {
     delete body.seconds;
     return;
@@ -3186,7 +3191,7 @@ export function buildSubmitRequest(ctx) {
   applyExtraFields(body, req);
   if (resolved.firstLastFrame !== undefined) body.first_last_frame = resolved.firstLastFrame;
   writeResponseFormat(body, req);
-  writeOutgoingSeconds(body, row, resolved.seconds);
+  writeOutgoingSeconds(body, row, resolved.seconds, req);
   writeImageCount(body, row, req);
   let p = PROFILE.createPath;
   if (PROFILE.byReferenceImage) p = hasImages ? PROFILE.byReferenceImage.with || p : PROFILE.byReferenceImage.without || p;
