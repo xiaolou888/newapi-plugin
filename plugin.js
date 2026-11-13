@@ -4,7 +4,7 @@ export const meta = {
   "name": "22222",
   "icon": "text",
   "description": "22222",
-  "version": "1.1.261111",
+  "version": "1.0.261113",
   "author": {
     "name": "ZZH"
   },
@@ -68,7 +68,76 @@ export const meta = {
   ],
   "fetchMode": "per_task",
   "protocols": [
-    "openai_video"
+    "openai_video",
+    {
+      "name": "openai_image",
+      "models": [
+        "gpt-image-2",
+        "gpt-image-2-2K",
+        "gpt-image-2-4K",
+        "gpt-image-2-medium",
+        "gpt-image-2-vip",
+        "gpt-image-2.5",
+        "gpt-image-2.6",
+        "gpt-image-2.6-gif",
+        "gpt-image-2.5-flare",
+        "gpt-image-2.6-flare",
+        "gpt-image-2.5-flare-vip",
+        "gpt-image-2.6-flare-vip",
+        "gpt-image-2.5-sunburst",
+        "gpt-image-2.6-sunburst",
+        "gpt-image-2.5-sunburst-vip",
+        "gpt-image-2.6-sunburst-vip",
+        "nano_banana_2",
+        "nano-banana-2.1",
+        "nano-banana-2.1-2K",
+        "nano-banana-2.1-4K",
+        "gemini-3.1-flash-image",
+        "gemini-3-pro-image",
+        "gemini-nano-banana-2.1",
+        "nano_banana_2-2K",
+        "nano_banana_2-4K",
+        "nano_banana_pro-1K",
+        "nano_banana_pro-2K",
+        "nano_banana_pro-4K"
+      ]
+    },
+    {
+      "name": "openai_responses",
+      "models": [
+        "gpt-image-2",
+        "gpt-image-2-2K",
+        "gpt-image-2-4K",
+        "gpt-image-2-medium",
+        "gpt-image-2-vip",
+        "gpt-image-2.5",
+        "gpt-image-2.6",
+        "gpt-image-2.6-gif",
+        "gpt-image-2.5-flare",
+        "gpt-image-2.6-flare",
+        "gpt-image-2.5-flare-vip",
+        "gpt-image-2.6-flare-vip",
+        "gpt-image-2.5-sunburst",
+        "gpt-image-2.6-sunburst",
+        "gpt-image-2.5-sunburst-vip",
+        "gpt-image-2.6-sunburst-vip",
+        "nano_banana_2",
+        "nano-banana-2.1",
+        "nano-banana-2.1-2K",
+        "nano-banana-2.1-4K",
+        "gemini-3.1-flash-image",
+        "gemini-3-pro-image",
+        "gemini-nano-banana-2.1",
+        "nano_banana_2-2K",
+        "nano_banana_2-4K",
+        "nano_banana_pro-1K",
+        "nano_banana_pro-2K",
+        "nano_banana_pro-4K"
+      ],
+      "supports": [
+        "sync"
+      ]
+    }
   ],
   "allowedHosts": [
     "zexapi.com"
@@ -426,11 +495,47 @@ const RATIO_MAP = {
     "suffixSlash": "21/9",
     "suffixColon": "21:9",
     "videoEnabled": false
+  },
+  "1:4": {
+    "1K": "512×2048",
+    "2K": "1024×4096",
+    "4K": "2048×8192",
+    "suffixAxis": "1x4",
+    "suffixSlash": "1/4",
+    "suffixColon": "1:4",
+    "videoEnabled": false
+  },
+  "4:1": {
+    "1K": "2048×512",
+    "2K": "4096×1024",
+    "4K": "8192×2048",
+    "suffixAxis": "4x1",
+    "suffixSlash": "4/1",
+    "suffixColon": "4:1",
+    "videoEnabled": false
+  },
+  "1:8": {
+    "1K": "768×6144",
+    "2K": "768×6144",
+    "4K": "1536×12288",
+    "suffixAxis": "1x8",
+    "suffixSlash": "1/8",
+    "suffixColon": "1:8",
+    "videoEnabled": false
+  },
+  "8:1": {
+    "1K": "3072×384",
+    "2K": "12288×1536",
+    "4K": "12288×1536",
+    "suffixAxis": "8x1",
+    "suffixSlash": "8/1",
+    "suffixColon": "8:1",
+    "videoEnabled": false
   }
 };
 // 通道协议。上游成功地址改 resultPath；模型映射改下面 models。
 const PROFILE = {
-  "downstreamImageSync": false,
+  "downstreamImageSync": true,
   "ossUrl": "",
   "ossTimeoutSeconds": 15,
   "ossAttempts": 3,
@@ -6751,3 +6856,188 @@ export function buildContentRequest(ctx) {
   if (!url) throw new Error("artifact_not_found");
   return { url: url, method: "GET", credentialless: true };
 }
+
+
+// Visual downstream image protocol v1
+(function () {
+  if (PROFILE.downstreamImageSync !== true) return;
+  if (protocols.openai_image) throw new Error("downstreamImageSync.existingProtocol");
+  function imageURLs(body) {
+    function entries(value) {
+      if (value == null) return [];
+      const values = Array.isArray(value) ? value : [value];
+      const urls = [];
+      for (let i = 0; i < values.length; i++) {
+        const item = values[i];
+        const url = typeof item === "string" ? item : item && (item.url || item.image_url || item.download_url || item.origin_url || item.r2Url);
+        if (typeof url !== "string" || !/^https?:\/\//i.test(url)) throw new Error("image result must contain HTTP URLs");
+        if (urls.indexOf(url) === -1) urls.push(url);
+      }
+      if (urls.length > 1) throw new Error("this visual plugin supports a single image per task");
+      return urls;
+    }
+    if (!body || typeof body !== "object") return [];
+    const primaryPath = trimmed(OSS_URL) ? PROFILE.ossResultPath : PROFILE.resultPath;
+    const direct = getPath(body, primaryPath);
+    if (direct != null && direct !== "") {
+      // A configured result object can itself contain a URL list.
+      if (typeof direct === "object" && !Array.isArray(direct) && !direct.url) return imageURLs(direct);
+      return entries(direct);
+    }
+    if (body.success === true && body.data && !Array.isArray(body.data)) return imageURLs(body.data);
+    const collections = [body.urls, Array.isArray(body.data) ? body.data : null, body.results, body.detail && body.detail.data];
+    for (let i = 0; i < collections.length; i++) {
+      if (Array.isArray(collections[i]) && collections[i].length) return entries(collections[i]);
+    }
+    // Keep every legacy scalar fallback (including video_url used by older
+    // image tasks), instead of maintaining a second incompatible field list.
+    const url = pickResultUrl(body);
+    if (url) return entries(url);
+    if (body.data && typeof body.data === "object") return imageURLs(body.data);
+    return [];
+  }
+  function imageRow(model, body) {
+    const row = findModel(model, body);
+    if (!row || row.objectType !== "image") throw new Error("unsupported image model");
+    return row;
+  }
+  protocols.openai_image = {
+    decodeRequest: function (ctx) {
+      let req = {};
+      const files = ctx.files || (ctx.body && ctx.body.files) || [];
+      if (ctx.body && ctx.body.kind === "json") {
+        const value = ctx.body.value;
+        if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("request body must be an object");
+        req = Object.assign({}, value);
+      } else if (ctx.body && ctx.body.kind === "multipart") {
+        const fields = ctx.body.fields || {};
+        const names = Object.keys(fields);
+        for (let i = 0; i < names.length; i++) {
+          const values = fields[names[i]] || [];
+          if (!values.length) continue;
+          if (values.length > 1 && !/^image(\[\d*\])?$/.test(names[i])) throw new Error(names[i] + " must be provided once");
+          req[names[i]] = values.length === 1 ? values[0] : values.slice();
+        }
+        if (req.n !== undefined) req.n = Number(req.n);
+        if (req.stream === "false") req.stream = false;
+      } else throw new Error("JSON or multipart body required");
+      const model = trimmed(ctx.model);
+      if (!model) throw new Error("model is required");
+      imageRow(ctx.upstreamModel || model, req);
+      if (typeof req.prompt !== "string" || !trimmed(req.prompt)) throw new Error("prompt is required");
+      if (req.stream !== undefined && req.stream !== false) throw new Error("stream is not supported on the synchronous image endpoint");
+      if (req.background !== undefined && typeof req.background !== "string") throw new Error("image background must be a string");
+      if (req.mask !== undefined) throw new Error("mask is not supported by this visual plugin");
+      if (req.response_format !== undefined && req.response_format !== "url" && req.response_format !== "b64_json") throw new Error("response_format must be url or b64_json");
+      if (req.n !== undefined && req.n !== 1) throw new Error("this visual plugin supports n=1 only");
+      if (req.image_count !== undefined && req.image_count !== 1) throw new Error("this visual plugin supports image_count=1 only");
+      const standardImages = collectImages(req, ["image", "image[]"], 129);
+      if (standardImages.length && !collectImages(req, PROFILE.refAccept, 129).length) {
+        setOutgoingPath(req, (PROFILE.refAccept || [])[0] || "images", standardImages);
+      }
+      const images = collectImages(req, PROFILE.refAccept, 129);
+      for (let i = 0; i < files.length; i++) {
+        if (!/^image(\[\d*\])?$/.test(files[i].field || "") || !/^image\//i.test(files[i].mimeType || "")) throw new Error("only image uploads are supported");
+      }
+      const hasImages = images.length > 0 || files.length > 0;
+      if (ctx.operation === "edit" && !hasImages) throw new Error("image is required for edits");
+      if (images.length + files.length > (PROFILE.refMax || 8)) throw new Error("too many reference images");
+      req.model = model;
+      // The host reads response_format from its original request context.
+      // Never copy this downstream delivery option into the vendor request.
+      delete req.response_format;
+      delete req.stream;
+      return {kind: "submit", model: model, action: hasImages ? "image_to_image" : "text_to_image", requestBody: req};
+    },
+    render: function (_ctx, task) {
+      if (!task || task.status !== "SUCCESS") throw new Error("image task is not successful");
+      const urls = imageURLs(task.data);
+      if (!urls.length) throw new Error("image task has no result URLs");
+      const secondaryPath = trimmed(OSS_URL) ? PROFILE.ossSecondaryResultPath : PROFILE.upstreamSecondaryPath;
+      const secondary = secondaryPath ? getPath(task.data, secondaryPath) : "";
+      return {data: urls.map(function (url) {
+        const out = PROFILE.resultFields
+          ? publicAddressFields(url, typeof secondary === "string" ? secondary : "")
+          : {url: url};
+        out.url = url;
+        return out;
+      })};
+    },
+  };
+  // Preserve the original query and transfer strategy. Refuse unexpected
+  // multi-image results before the legacy parser can select its first URL.
+  const originalParseTaskResult = parseTaskResult;
+  parseTaskResult = function (ctx, body, response) {
+    const row = findModel(ctx.upstreamModel || ctx.model, {});
+    const mapped = mapStatus(body && (body.status || body.state || (body.data && body.data.status)));
+    if (row && row.objectType === "image" && (!ctx.state || !ctx.state.phase) && (!mapped || mapped === "SUCCESS")) {
+      try { imageURLs(body); }
+      catch (error) { return {status: "FAILURE", reason: String(error.message || error)}; }
+    }
+    return originalParseTaskResult(ctx, body, response);
+  };
+})();
+
+
+// Visual downstream responses protocol v1
+(function () {
+  if (PROFILE.downstreamImageSync !== true) return;
+  if (protocols.openai_responses) throw new Error("downstreamImageSync.existingProtocol");
+  protocols.openai_responses = {
+    decodeRequest: function (ctx) {
+      if (!ctx.body || ctx.body.kind !== "json") throw new Error("Responses requires a JSON body");
+      const body = ctx.body.value;
+      if (!body || typeof body !== "object" || Array.isArray(body)) throw new Error("request body must be an object");
+      if (ctx.stream || (body.stream !== undefined && body.stream !== false)) throw new Error("only synchronous Responses requests are supported");
+      if (body.background !== undefined && body.background !== false) throw new Error("background Responses requests are not supported");
+      if (body.previous_response_id != null || body.conversation != null) throw new Error("only a single user input is supported");
+      if (body.instructions != null && body.instructions !== "") throw new Error("instructions are not supported; include the image prompt in input");
+      if (body.tools !== undefined && (!Array.isArray(body.tools) || body.tools.length)) throw new Error("tools are not supported");
+      if (body.tool_choice !== undefined && body.tool_choice !== "none" && body.tool_choice !== "auto") throw new Error("tool_choice is not supported");
+      const texts = [];
+      const images = [];
+      function text(value) {
+        if (typeof value !== "string" || !trimmed(value)) throw new Error("input text must not be empty");
+        texts.push(value);
+      }
+      if (typeof body.input === "string") text(body.input);
+      else {
+        if (!Array.isArray(body.input) || body.input.length !== 1) throw new Error("input must be a string or one user message");
+        const message = body.input[0];
+        if (!message || (message.type !== undefined && message.type !== "message") || message.role !== "user") throw new Error("only a single user message is supported");
+        if (typeof message.content === "string") text(message.content);
+        else {
+          if (!Array.isArray(message.content) || !message.content.length) throw new Error("user content is required");
+          for (let i = 0; i < message.content.length; i++) {
+            const part = message.content[i];
+            if (!part || typeof part !== "object") throw new Error("invalid input content");
+            if (part.type === "input_text") text(part.text);
+            else if (part.type === "input_image") {
+              if (part.file_id != null || typeof part.image_url !== "string" || !/^https?:\/\/[^\s<>]+$/i.test(part.image_url)) throw new Error("reference images require HTTP URLs; file IDs and inline images are not supported");
+              images.push(part.image_url);
+            } else throw new Error("only input_text and input_image are supported");
+          }
+        }
+      }
+      if (!texts.length) throw new Error("an image prompt is required");
+      const request = {prompt: texts.join("\n"), n: 1};
+      const fields = ["size", "quality", "aspect_ratio", "aspectRatio", "resolution", "image_size", "imageSize", "n", "image_count"];
+      for (let i = 0; i < fields.length; i++) if (body[fields[i]] !== undefined) request[fields[i]] = body[fields[i]];
+      if (body.response_format !== undefined) throw new Error("Responses returns image links; response_format is only supported on Images endpoints");
+      if (body.mask !== undefined) throw new Error("mask is not supported by this visual plugin");
+      if (images.length) setOutgoingPath(request, (PROFILE.refAccept || [])[0] || "images", images);
+      return protocols.openai_image.decodeRequest(Object.assign({}, ctx, {operation: images.length ? "edit" : "generate", files: [], body: {kind: "json", value: request}}));
+    },
+    renderFinal: function (ctx, task) {
+      // Validate the same single-image result as Images, but deliver only a
+      // host-owned artifact URL. Never expose the private vendor URL here.
+      protocols.openai_image.render(ctx, task);
+      const artifacts = ctx.artifacts || {};
+      const keys = Object.keys(artifacts);
+      if (keys.length !== 1) throw new Error("a single host image artifact is required");
+      const artifact = artifacts[keys[0]];
+      if (!artifact || (artifact.type !== "image" && artifact.type !== "file") || typeof artifact.url !== "string" || !artifact.url || /[\s<>]/.test(artifact.url)) throw new Error("host image artifact URL is unavailable");
+      return {output: [{type: "message", role: "assistant", content: [{type: "output_text", text: "![image](<" + artifact.url + ">)", annotations: [], logprobs: []}]}]};
+    },
+  };
+})();
