@@ -4,7 +4,7 @@ export const meta = {
   "name": "22222",
   "icon": "text",
   "description": "22222",
-  "version": "1.0.261121",
+  "version": "1.0.261124",
   "author": {
     "name": "ZZH"
   },
@@ -12,19 +12,13 @@ export const meta = {
     "gpt-image-2",
     "gpt-image-2-2K",
     "gpt-image-2-4K",
-    "gpt-image-2-medium",
-    "gpt-image-2-vip",
     "gpt-image-2.5",
     "gpt-image-2.6",
+    "gpt-image-2.6-2K",
+    "gpt-image-2.6-4K",
     "gpt-image-2.6-gif",
     "gpt-image-2.5-flare",
-    "gpt-image-2.6-flare",
-    "gpt-image-2.5-flare-vip",
-    "gpt-image-2.6-flare-vip",
     "gpt-image-2.5-sunburst",
-    "gpt-image-2.6-sunburst",
-    "gpt-image-2.5-sunburst-vip",
-    "gpt-image-2.6-sunburst-vip",
     "nano_banana_2",
     "nano-banana-2.1",
     "nano-banana-2.1-2K",
@@ -44,7 +38,6 @@ export const meta = {
     "omni_1_2_flash-10s",
     "omni_1_2_flash-10s-fl",
     "omni_1_2_flash-15s",
-    "omni_1_2_flash-15s-fl",
     "veo_3_1-lite",
     "veo_3_1-lite-fl",
     "veo_3_1-lite-hd",
@@ -53,15 +46,7 @@ export const meta = {
     "muse-video",
     "veo_3_1-fast-fl",
     "muse-video-fl",
-    "grok-imagine-video-1.5",
-    "grok-imagine-video-1.5-lite",
-    "grok-imagine-video-1.5-fast",
-    "seedance-2.0",
     "seedance-2.0-fast",
-    "seedance-2.5",
-    "seedance-2.5-10s",
-    "seedance-2.5-15s",
-    "seedance-2.5-30s",
     "seedance-2.0-mini",
     "minimax-h3-max",
     "minimax-h3"
@@ -75,19 +60,13 @@ export const meta = {
         "gpt-image-2",
         "gpt-image-2-2K",
         "gpt-image-2-4K",
-        "gpt-image-2-medium",
-        "gpt-image-2-vip",
         "gpt-image-2.5",
         "gpt-image-2.6",
+        "gpt-image-2.6-2K",
+        "gpt-image-2.6-4K",
         "gpt-image-2.6-gif",
         "gpt-image-2.5-flare",
-        "gpt-image-2.6-flare",
-        "gpt-image-2.5-flare-vip",
-        "gpt-image-2.6-flare-vip",
         "gpt-image-2.5-sunburst",
-        "gpt-image-2.6-sunburst",
-        "gpt-image-2.5-sunburst-vip",
-        "gpt-image-2.6-sunburst-vip",
         "nano_banana_2",
         "nano-banana-2.1",
         "nano-banana-2.1-2K",
@@ -108,19 +87,13 @@ export const meta = {
         "gpt-image-2",
         "gpt-image-2-2K",
         "gpt-image-2-4K",
-        "gpt-image-2-medium",
-        "gpt-image-2-vip",
         "gpt-image-2.5",
         "gpt-image-2.6",
+        "gpt-image-2.6-2K",
+        "gpt-image-2.6-4K",
         "gpt-image-2.6-gif",
         "gpt-image-2.5-flare",
-        "gpt-image-2.6-flare",
-        "gpt-image-2.5-flare-vip",
-        "gpt-image-2.6-flare-vip",
         "gpt-image-2.5-sunburst",
-        "gpt-image-2.6-sunburst",
-        "gpt-image-2.5-sunburst-vip",
-        "gpt-image-2.6-sunburst-vip",
         "nano_banana_2",
         "nano-banana-2.1",
         "nano-banana-2.1-2K",
@@ -151,7 +124,6 @@ export const meta = {
         "omni_1_2_flash-10s",
         "omni_1_2_flash-10s-fl",
         "omni_1_2_flash-15s",
-        "omni_1_2_flash-15s-fl",
         "veo_3_1-lite",
         "veo_3_1-lite-fl",
         "veo_3_1-fast",
@@ -216,34 +188,7 @@ export const meta = {
     },
     {
       "models": [
-        "grok-imagine-video-1.5",
-        "grok-imagine-video-1.5-lite",
-        "grok-imagine-video-1.5-fast",
-        "seedance-2.5-10s",
-        "seedance-2.5-15s",
-        "seedance-2.5-30s"
-      ],
-      "schema": {
-        "resolution": {
-          "enum": [
-            "480p",
-            "720p"
-          ],
-          "description": "视频分辨率"
-        },
-        "request_count": {
-          "type": "number",
-          "unit": "count",
-          "unitLabel": "次",
-          "description": "视频生成价格"
-        }
-      }
-    },
-    {
-      "models": [
-        "seedance-2.0",
-        "seedance-2.0-fast",
-        "seedance-2.5"
+        "seedance-2.0-fast"
       ],
       "schema": {
         "resolution": {
@@ -301,18 +246,12 @@ export const meta = {
     {
       "models": [
         "gpt-image-2",
-        "gpt-image-2-medium",
-        "gpt-image-2-vip",
         "gpt-image-2.6",
+        "gpt-image-2.6-2K",
+        "gpt-image-2.6-4K",
         "gpt-image-2.6-gif",
         "gpt-image-2.5-flare",
-        "gpt-image-2.6-flare",
-        "gpt-image-2.5-flare-vip",
-        "gpt-image-2.6-flare-vip",
         "gpt-image-2.5-sunburst",
-        "gpt-image-2.6-sunburst",
-        "gpt-image-2.5-sunburst-vip",
-        "gpt-image-2.6-sunburst-vip",
         "nano_banana_2",
         "gemini-3.1-flash-image",
         "gemini-3-pro-image",
@@ -410,126 +349,126 @@ const RATIO_MAP = {
     "1K": "1024x1024",
     "2K": "2048x2048",
     "4K": "2880x2880",
-    "suffixAxis": "1x1",  // 拼成 xxx-1x1
-    "suffixSlash": "1/1",  // 拼成 xxx-1/1
-    "suffixColon": "1:1",  // 拼成 xxx-1:1
+    "suffixAxis": "1x1",
+    "suffixSlash": "1/1",
+    "suffixColon": "1:1",
     "videoEnabled": false
   },
   "16:9": {
     "1K": "1280x720",
     "2K": "2560x1440",
     "4K": "3840x2160",
-    "suffixAxis": "16x9",  // 拼成 xxx-16x9
-    "suffixSlash": "16/9",  // 拼成 xxx-16/9
-    "suffixColon": "16:9",  // 拼成 xxx-16:9
+    "suffixAxis": "16x9",
+    "suffixSlash": "16/9",
+    "suffixColon": "16:9",
     "videoEnabled": true
   },
   "9:16": {
     "1K": "720x1280",
     "2K": "1440x2560",
     "4K": "2160x3840",
-    "suffixAxis": "9x16",  // 拼成 xxx-9x16
-    "suffixSlash": "9/16",  // 拼成 xxx-9/16
-    "suffixColon": "9:16",  // 拼成 xxx-9:16
+    "suffixAxis": "9x16",
+    "suffixSlash": "9/16",
+    "suffixColon": "9:16",
     "videoEnabled": true
   },
   "4:3": {
     "1K": "1152x864",
     "2K": "2304x1728",
     "4K": "3264x2448",
-    "suffixAxis": "4x3",  // 拼成 xxx-4x3
-    "suffixSlash": "4/3",  // 拼成 xxx-4/3
-    "suffixColon": "4:3",  // 拼成 xxx-4:3
+    "suffixAxis": "4x3",
+    "suffixSlash": "4/3",
+    "suffixColon": "4:3",
     "videoEnabled": false
   },
   "3:4": {
     "1K": "864x1152",
     "2K": "1728x2304",
     "4K": "2448x3264",
-    "suffixAxis": "3x4",  // 拼成 xxx-3x4
-    "suffixSlash": "3/4",  // 拼成 xxx-3/4
-    "suffixColon": "3:4",  // 拼成 xxx-3:4
+    "suffixAxis": "3x4",
+    "suffixSlash": "3/4",
+    "suffixColon": "3:4",
     "videoEnabled": false
   },
   "3:2": {
     "1K": "1248x832",
     "2K": "2496x1664",
     "4K": "3504x2336",
-    "suffixAxis": "3x2",  // 拼成 xxx-3x2
-    "suffixSlash": "3/2",  // 拼成 xxx-3/2
-    "suffixColon": "3:2",  // 拼成 xxx-3:2
+    "suffixAxis": "3x2",
+    "suffixSlash": "3/2",
+    "suffixColon": "3:2",
     "videoEnabled": false
   },
   "2:3": {
     "1K": "832x1248",
     "2K": "1664x2496",
     "4K": "2336x3504",
-    "suffixAxis": "2x3",  // 拼成 xxx-2x3
-    "suffixSlash": "2/3",  // 拼成 xxx-2/3
-    "suffixColon": "2:3",  // 拼成 xxx-2:3
+    "suffixAxis": "2x3",
+    "suffixSlash": "2/3",
+    "suffixColon": "2:3",
     "videoEnabled": false
   },
   "5:4": {
     "1K": "1120x896",
     "2K": "2240x1792",
     "4K": "3200x2560",
-    "suffixAxis": "5x4",  // 拼成 xxx-5x4
-    "suffixSlash": "5/4",  // 拼成 xxx-5/4
-    "suffixColon": "5:4",  // 拼成 xxx-5:4
+    "suffixAxis": "5x4",
+    "suffixSlash": "5/4",
+    "suffixColon": "5:4",
     "videoEnabled": false
   },
   "4:5": {
     "1K": "896x1120",
     "2K": "1792x2240",
     "4K": "2560x3200",
-    "suffixAxis": "4x5",  // 拼成 xxx-4x5
-    "suffixSlash": "4/5",  // 拼成 xxx-4/5
-    "suffixColon": "4:5",  // 拼成 xxx-4:5
+    "suffixAxis": "4x5",
+    "suffixSlash": "4/5",
+    "suffixColon": "4:5",
     "videoEnabled": false
   },
   "21:9": {
     "1K": "1456x624",
     "2K": "3024x1296",
     "4K": "3696x1584",
-    "suffixAxis": "21x9",  // 拼成 xxx-21x9
-    "suffixSlash": "21/9",  // 拼成 xxx-21/9
-    "suffixColon": "21:9",  // 拼成 xxx-21:9
+    "suffixAxis": "21x9",
+    "suffixSlash": "21/9",
+    "suffixColon": "21:9",
     "videoEnabled": false
   },
   "1:4": {
     "1K": "512×2048",
     "2K": "1024×4096",
     "4K": "2048×8192",
-    "suffixAxis": "1x4",  // 拼成 xxx-1x4
-    "suffixSlash": "1/4",  // 拼成 xxx-1/4
-    "suffixColon": "1:4",  // 拼成 xxx-1:4
+    "suffixAxis": "1x4",
+    "suffixSlash": "1/4",
+    "suffixColon": "1:4",
     "videoEnabled": false
   },
   "4:1": {
     "1K": "2048×512",
     "2K": "4096×1024",
     "4K": "8192×2048",
-    "suffixAxis": "4x1",  // 拼成 xxx-4x1
-    "suffixSlash": "4/1",  // 拼成 xxx-4/1
-    "suffixColon": "4:1",  // 拼成 xxx-4:1
+    "suffixAxis": "4x1",
+    "suffixSlash": "4/1",
+    "suffixColon": "4:1",
     "videoEnabled": false
   },
   "1:8": {
     "1K": "768×6144",
     "2K": "768×6144",
     "4K": "1536×12288",
-    "suffixAxis": "1x8",  // 拼成 xxx-1x8
-    "suffixSlash": "1/8",  // 拼成 xxx-1/8
-    "suffixColon": "1:8",  // 拼成 xxx-1:8
+    "suffixAxis": "1x8",
+    "suffixSlash": "1/8",
+    "suffixColon": "1:8",
     "videoEnabled": false
   },
   "8:1": {
     "1K": "3072×384",
     "2K": "12288×1536",
     "4K": "12288×1536",
-    "suffixAxis": "8x1",  // 拼成 xxx-8x1
-    "suffixSlash": "8/1",  // 拼成 xxx-8/1
-    "suffixColon": "8:1",  // 拼成 xxx-8:1
+    "suffixAxis": "8x1",
+    "suffixSlash": "8/1",
+    "suffixColon": "8:1",
     "videoEnabled": false
   }
 };
@@ -562,11 +501,9 @@ const PROFILE = {
   "createQuery": {},
   "byReferenceImage": null,
   "queryMethod": "GET",
-  // 轮询 GET：queryPath + queryQuery，例如 /v1/videos/{id}?detail=true。手改这两行。
   "queryPath": "/v1/videos/{id}",
   "queryQuery": {},
   "taskIdPath": "id",
-  // 上游成功地址：手改这一行（点路径，例如 detail.data[0].origin_url）
   "resultPath": "url",
   "aspectAccept": [
     "aspect_ratio",
@@ -619,16 +556,40 @@ const PROFILE = {
       "downstream": "gpt-image-2",
       "upstream": "gpt-image-2",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -665,16 +626,38 @@ const PROFILE = {
       "downstream": "gpt-image-2-2K",
       "upstream": "gpt-image-2-2K",
       "resolution": "2K",
-      "supportedResolutions": ["2K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "2K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -711,16 +694,38 @@ const PROFILE = {
       "downstream": "gpt-image-2-4K",
       "upstream": "gpt-image-2-4K",
       "resolution": "4K",
-      "supportedResolutions": ["4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -731,98 +736,6 @@ const PROFILE = {
       "imageSizeField": "",
       "videoSizeMap": {},
       "qualityMode": "const",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2-medium",
-      "upstream": "gpt-image-2-medium",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "const",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2-vip",
-      "upstream": "gpt-image-2-vip",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "copy",
       "qualityValue": "medium",
       "sendQuality": true,
       "sendSeconds": false,
@@ -849,16 +762,38 @@ const PROFILE = {
       "downstream": "gpt-image-2.5",
       "upstream": "gpt-image-2.5",
       "resolution": "1K",
-      "supportedResolutions": ["1K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -895,16 +830,180 @@ const PROFILE = {
       "downstream": "gpt-image-2.6",
       "upstream": "gpt-image-2.6",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
+      "imageField": "images",
+      "firstFrameField": "",
+      "lastFrameField": "",
+      "sendSize": true,
+      "sendAspect": false,
+      "sendImageSize": false,
+      "aspectField": "",
+      "imageSizeField": "",
+      "videoSizeMap": {},
+      "qualityMode": "const",
+      "qualityValue": "medium",
+      "sendQuality": true,
+      "sendSeconds": false,
+      "secondsUpstream": "off",
+      "defaultSeconds": 0,
+      "billBySeconds": false,
+      "requestCountField": "request_count",
+      "billByImageCount": false,
+      "allowVideoUpload": false,
+      "maxReferenceVideos": 1,
+      "billByReferenceVideo": false,
+      "billByInputVideoSeconds": false,
+      "inputVideoReserveSeconds": 15,
+      "inputVideoMaxSeconds": 15,
+      "inputVideoSecondsPath": "usage.input_seconds",
+      "audioField": "",
+      "maxReferenceAudios": 1,
+      "billByAudio": false,
+      "audioRequestField": "generate_audio",
+      "audioOutputField": "",
+      "defaultAudio": true
+    },
+    {
+      "downstream": "gpt-image-2.6-2K",
+      "upstream": "gpt-image-2.6-2K",
+      "resolution": "1K",
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
+      "duration": false,
+      "firstLastFrameMode": "off",
+      "sendMode": "pixel",
+      "suffixStyle": "axis",
+      "defaultAspect": "omit",
+      "objectType": "image",
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
+      "imageField": "images",
+      "firstFrameField": "",
+      "lastFrameField": "",
+      "sendSize": true,
+      "sendAspect": false,
+      "sendImageSize": false,
+      "aspectField": "",
+      "imageSizeField": "",
+      "videoSizeMap": {},
+      "qualityMode": "const",
+      "qualityValue": "medium",
+      "sendQuality": true,
+      "sendSeconds": false,
+      "secondsUpstream": "off",
+      "defaultSeconds": 0,
+      "billBySeconds": false,
+      "requestCountField": "request_count",
+      "billByImageCount": false,
+      "allowVideoUpload": false,
+      "maxReferenceVideos": 1,
+      "billByReferenceVideo": false,
+      "billByInputVideoSeconds": false,
+      "inputVideoReserveSeconds": 15,
+      "inputVideoMaxSeconds": 15,
+      "inputVideoSecondsPath": "usage.input_seconds",
+      "audioField": "",
+      "maxReferenceAudios": 1,
+      "billByAudio": false,
+      "audioRequestField": "generate_audio",
+      "audioOutputField": "",
+      "defaultAudio": true
+    },
+    {
+      "downstream": "gpt-image-2.6-4K",
+      "upstream": "gpt-image-2.6-4K",
+      "resolution": "1K",
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
+      "duration": false,
+      "firstLastFrameMode": "off",
+      "sendMode": "pixel",
+      "suffixStyle": "axis",
+      "defaultAspect": "omit",
+      "objectType": "image",
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -941,16 +1040,40 @@ const PROFILE = {
       "downstream": "gpt-image-2.6-gif",
       "upstream": "gpt-image-2.6-gif",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -987,16 +1110,40 @@ const PROFILE = {
       "downstream": "gpt-image-2.5-flare",
       "upstream": "gpt-image-2.5-flare",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1007,144 +1154,6 @@ const PROFILE = {
       "imageSizeField": "",
       "videoSizeMap": {},
       "qualityMode": "const",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2.6-flare",
-      "upstream": "gpt-image-2.6-flare",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "const",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2.5-flare-vip",
-      "upstream": "gpt-image-2.5-flare-vip",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "copy",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2.6-flare-vip",
-      "upstream": "gpt-image-2.6-flare-vip",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "copy",
       "qualityValue": "medium",
       "sendQuality": true,
       "sendSeconds": false,
@@ -1171,16 +1180,40 @@ const PROFILE = {
       "downstream": "gpt-image-2.5-sunburst",
       "upstream": "gpt-image-2.5-sunburst",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1191,144 +1224,6 @@ const PROFILE = {
       "imageSizeField": "",
       "videoSizeMap": {},
       "qualityMode": "const",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2.6-sunburst",
-      "upstream": "gpt-image-2.6-sunburst",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "const",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2.5-sunburst-vip",
-      "upstream": "gpt-image-2.5-sunburst-vip",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "copy",
-      "qualityValue": "medium",
-      "sendQuality": true,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "gpt-image-2.6-sunburst-vip",
-      "upstream": "gpt-image-2.6-sunburst-vip",
-      "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {},
-      "qualityMode": "copy",
       "qualityValue": "medium",
       "sendQuality": true,
       "sendSeconds": false,
@@ -1355,16 +1250,40 @@ const PROFILE = {
       "downstream": "nano_banana_2",
       "upstream": "nano_banana_2",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "ratio_only",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1401,16 +1320,38 @@ const PROFILE = {
       "downstream": "nano-banana-2.1",
       "upstream": "nano-banana-2.1",
       "resolution": "1K",
-      "supportedResolutions": ["1K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1447,16 +1388,38 @@ const PROFILE = {
       "downstream": "nano-banana-2.1-2K",
       "upstream": "nano-banana-2.1-2K",
       "resolution": "2K",
-      "supportedResolutions": ["2K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "2K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1493,16 +1456,38 @@ const PROFILE = {
       "downstream": "nano-banana-2.1-4K",
       "upstream": "nano-banana-2.1-4K",
       "resolution": "4K",
-      "supportedResolutions": ["4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1539,16 +1524,40 @@ const PROFILE = {
       "downstream": "gemini-3.1-flash-image",
       "upstream": "gemini-3.1-flash-image",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1585,16 +1594,40 @@ const PROFILE = {
       "downstream": "gemini-3-pro-image",
       "upstream": "gemini-3-pro-image",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1631,16 +1664,40 @@ const PROFILE = {
       "downstream": "gemini-nano-banana-2.1",
       "upstream": "gemini-nano-banana-2.1",
       "resolution": "1K",
-      "supportedResolutions": ["1K","2K","4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1677,16 +1734,38 @@ const PROFILE = {
       "downstream": "nano_banana_2-2K",
       "upstream": "nano_banana_2-2K",
       "resolution": "2K",
-      "supportedResolutions": ["2K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "2K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "ratio_only",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1723,16 +1802,38 @@ const PROFILE = {
       "downstream": "nano_banana_2-4K",
       "upstream": "nano_banana_2-4K",
       "resolution": "4K",
-      "supportedResolutions": ["4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "ratio_only",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1769,16 +1870,38 @@ const PROFILE = {
       "downstream": "nano_banana_pro-1K",
       "upstream": "nano_banana_pro-1K",
       "resolution": "1K",
-      "supportedResolutions": ["1K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "1K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "ratio_only",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1815,16 +1938,38 @@ const PROFILE = {
       "downstream": "nano_banana_pro-2K",
       "upstream": "nano_banana_pro-2K",
       "resolution": "2K",
-      "supportedResolutions": ["2K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "2K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "ratio_only",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1861,16 +2006,38 @@ const PROFILE = {
       "downstream": "nano_banana_pro-4K",
       "upstream": "nano_banana_pro-4K",
       "resolution": "4K",
-      "supportedResolutions": ["4K"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "4K"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "ratio_only",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "image",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1907,16 +2074,40 @@ const PROFILE = {
       "downstream": "omni_flash-10s",
       "upstream": "omni_flash-10s",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1925,7 +2116,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -1953,16 +2169,34 @@ const PROFILE = {
       "downstream": "omni_flash-10s-fl",
       "upstream": "omni_flash-10s-fl",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -1971,7 +2205,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -1999,16 +2258,34 @@ const PROFILE = {
       "downstream": "omni_flash-hd-10s",
       "upstream": "omni_flash-hd-10s",
       "resolution": "1080p",
-      "supportedResolutions": ["1080p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "1080p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2017,7 +2294,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2045,16 +2347,34 @@ const PROFILE = {
       "downstream": "omni_flash-hd-10s-fl",
       "upstream": "omni_flash-hd-10s-fl",
       "resolution": "1080p",
-      "supportedResolutions": ["1080p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "1080p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2063,7 +2383,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2091,16 +2436,46 @@ const PROFILE = {
       "downstream": "omni_1_2_flash-10s",
       "upstream": "omni_1_2_flash-10s",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2109,7 +2484,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2137,16 +2537,46 @@ const PROFILE = {
       "downstream": "omni_1_2_flash-10s-fl",
       "upstream": "omni_1_2_flash-10s-fl",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2155,7 +2585,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2183,16 +2638,46 @@ const PROFILE = {
       "downstream": "omni_1_2_flash-15s",
       "upstream": "omni_1_2_flash-15s",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2201,53 +2686,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": true,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "omni_1_2_flash-15s-fl",
-      "upstream": "omni_1_2_flash-15s-fl",
-      "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
-      "duration": false,
-      "firstLastFrameMode": "off",
-      "sendMode": "pixel",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": true,
-      "sendAspect": false,
-      "sendImageSize": false,
-      "aspectField": "",
-      "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2275,16 +2739,34 @@ const PROFILE = {
       "downstream": "veo_3_1-lite",
       "upstream": "veo_3_1-lite",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2293,7 +2775,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2321,16 +2828,34 @@ const PROFILE = {
       "downstream": "veo_3_1-lite-fl",
       "upstream": "veo_3_1-lite-fl",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2339,7 +2864,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2367,16 +2917,34 @@ const PROFILE = {
       "downstream": "veo_3_1-lite-hd",
       "upstream": "veo_3_1-lite-hd",
       "resolution": "1080p",
-      "supportedResolutions": ["1080p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "1080p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2385,7 +2953,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2413,16 +3006,34 @@ const PROFILE = {
       "downstream": "veo_3_1-lite-hd-fl",
       "upstream": "veo_3_1-lite-hd-fl",
       "resolution": "1080p",
-      "supportedResolutions": ["1080p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "1080p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2431,7 +3042,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2459,16 +3095,34 @@ const PROFILE = {
       "downstream": "veo_3_1-fast",
       "upstream": "veo_3_1-fast",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2477,7 +3131,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2505,16 +3184,36 @@ const PROFILE = {
       "downstream": "muse-video",
       "upstream": "muse-video",
       "resolution": "720p",
-      "supportedResolutions": ["720p","1080p"],
-      "videoAspectRatios": ["16:9","9:16","1:1"],
+      "supportedResolutions": [
+        "720p",
+        "1080p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2523,7 +3222,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2551,16 +3275,34 @@ const PROFILE = {
       "downstream": "veo_3_1-fast-fl",
       "upstream": "veo_3_1-fast-fl",
       "resolution": "720p",
-      "supportedResolutions": ["720p"],
-      "videoAspectRatios": ["16:9","9:16"],
+      "supportedResolutions": [
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2569,7 +3311,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2597,16 +3364,36 @@ const PROFILE = {
       "downstream": "muse-video-fl",
       "upstream": "muse-video-fl",
       "resolution": "720p",
-      "supportedResolutions": ["720p","1080p"],
-      "videoAspectRatios": ["16:9","9:16","1:1"],
+      "supportedResolutions": [
+        "720p",
+        "1080p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
       "duration": false,
       "firstLastFrameMode": "off",
       "sendMode": "pixel",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2615,191 +3402,32 @@ const PROFILE = {
       "sendImageSize": false,
       "aspectField": "",
       "imageSizeField": "",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
-      "billBySeconds": true,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": true,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "grok-imagine-video-1.5",
-      "upstream": "grok-imagine-video-1.5",
-      "resolution": "720p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "grok-imagine-video-1.5-lite",
-      "upstream": "grok-imagine-video-1.5-lite",
-      "resolution": "720p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "grok-imagine-video-1.5-fast",
-      "upstream": "grok-imagine-video-1.5-fast",
-      "resolution": "720p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "seedance-2.0",
-      "upstream": "seedance-2.0",
-      "resolution": "720p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2827,16 +3455,51 @@ const PROFILE = {
       "downstream": "seedance-2.0-fast",
       "upstream": "seedance-2.0-fast",
       "resolution": "720p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "480p",
+        "720p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "passthrough",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -2845,7 +3508,32 @@ const PROFILE = {
       "sendImageSize": true,
       "aspectField": "",
       "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -2856,190 +3544,6 @@ const PROFILE = {
       "requestCountField": "request_count",
       "billByImageCount": false,
       "allowVideoUpload": true,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "seedance-2.5",
-      "upstream": "seedance-2.5",
-      "resolution": "720p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
-      "billBySeconds": true,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": true,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "seedance-2.5-10s",
-      "upstream": "seedance-2.5-10s",
-      "resolution": "480p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "seedance-2.5-15s",
-      "upstream": "seedance-2.5-15s",
-      "resolution": "480p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
-      "maxReferenceVideos": 1,
-      "billByReferenceVideo": false,
-      "billByInputVideoSeconds": false,
-      "inputVideoReserveSeconds": 15,
-      "inputVideoMaxSeconds": 15,
-      "inputVideoSecondsPath": "usage.input_seconds",
-      "audioField": "",
-      "maxReferenceAudios": 1,
-      "billByAudio": false,
-      "audioRequestField": "generate_audio",
-      "audioOutputField": "",
-      "defaultAudio": true
-    },
-    {
-      "downstream": "seedance-2.5-30s",
-      "upstream": "seedance-2.5-30s",
-      "resolution": "480p",
-      "supportedResolutions": ["480p","720p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4"],
-      "duration": false,
-      "firstLastFrameMode": "passthrough",
-      "sendMode": "tier_plus_ratio",
-      "suffixStyle": "axis",
-      "defaultAspect": "omit",
-      "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
-      "imageField": "images",
-      "firstFrameField": "",
-      "lastFrameField": "",
-      "sendSize": false,
-      "sendAspect": true,
-      "sendImageSize": true,
-      "aspectField": "",
-      "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
-      "qualityMode": "off",
-      "qualityValue": "medium",
-      "sendQuality": false,
-      "sendSeconds": false,
-      "secondsUpstream": "off",
-      "defaultSeconds": 0,
-      "billBySeconds": false,
-      "requestCountField": "request_count",
-      "billByImageCount": false,
-      "allowVideoUpload": false,
       "maxReferenceVideos": 1,
       "billByReferenceVideo": false,
       "billByInputVideoSeconds": false,
@@ -3057,16 +3561,50 @@ const PROFILE = {
       "downstream": "seedance-2.0-mini",
       "upstream": "seedance-2.0-mini",
       "resolution": "480p",
-      "supportedResolutions": ["480p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "480p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "passthrough",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -3075,7 +3613,32 @@ const PROFILE = {
       "sendImageSize": true,
       "aspectField": "",
       "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -3103,16 +3666,51 @@ const PROFILE = {
       "downstream": "minimax-h3-max",
       "upstream": "minimax-h3-max",
       "resolution": "480p",
-      "supportedResolutions": ["480p","768p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "480p",
+        "768p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "passthrough",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -3121,7 +3719,32 @@ const PROFILE = {
       "sendImageSize": true,
       "aspectField": "",
       "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
@@ -3149,16 +3772,51 @@ const PROFILE = {
       "downstream": "minimax-h3",
       "upstream": "minimax-h3",
       "resolution": "480p",
-      "supportedResolutions": ["480p","768p"],
-      "videoAspectRatios": ["16:9","9:16","1:1","4:3","3:4","21:9"],
+      "supportedResolutions": [
+        "480p",
+        "768p"
+      ],
+      "videoAspectRatios": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
       "duration": false,
       "firstLastFrameMode": "passthrough",
       "sendMode": "tier_plus_ratio",
       "suffixStyle": "axis",
       "defaultAspect": "omit",
       "objectType": "video",
-      "mediaMaps": [{"kind":"images_all","from":"","to":"images","outputMode":"array"},{"kind":"videos_all","from":"","to":"videos","outputMode":"array"},{"kind":"audios_all","from":"","to":"audios","outputMode":"array"}],
-      "imageMaps": [{"kind":"images_all","from":"","to":"images"}],
+      "mediaMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images",
+          "outputMode": "array"
+        },
+        {
+          "kind": "videos_all",
+          "from": "",
+          "to": "videos",
+          "outputMode": "array"
+        },
+        {
+          "kind": "audios_all",
+          "from": "",
+          "to": "audios",
+          "outputMode": "array"
+        }
+      ],
+      "imageMaps": [
+        {
+          "kind": "images_all",
+          "from": "",
+          "to": "images"
+        }
+      ],
       "imageField": "images",
       "firstFrameField": "",
       "lastFrameField": "",
@@ -3167,7 +3825,32 @@ const PROFILE = {
       "sendImageSize": true,
       "aspectField": "",
       "imageSizeField": "resolution",
-      "videoSizeMap": {"480p":{"16:9":"854x480","9:16":"480x854"},"720p":{"16:9":"1280x720","9:16":"720x1280"},"768p":{"16:9":"1366x768","9:16":"768x1366"},"1080p":{"16:9":"1920x1080","9:16":"1080x1920"},"2K":{"16:9":"2560x1440","9:16":"1440x2560"},"4K":{"16:9":"3840x2160","9:16":"2160x3840"}},
+      "videoSizeMap": {
+        "480p": {
+          "16:9": "854x480",
+          "9:16": "480x854"
+        },
+        "720p": {
+          "16:9": "1280x720",
+          "9:16": "720x1280"
+        },
+        "768p": {
+          "16:9": "1366x768",
+          "9:16": "768x1366"
+        },
+        "1080p": {
+          "16:9": "1920x1080",
+          "9:16": "1080x1920"
+        },
+        "2K": {
+          "16:9": "2560x1440",
+          "9:16": "1440x2560"
+        },
+        "4K": {
+          "16:9": "3840x2160",
+          "9:16": "2160x3840"
+        }
+      },
       "qualityMode": "off",
       "qualityValue": "medium",
       "sendQuality": false,
