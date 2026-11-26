@@ -4,7 +4,7 @@ export const meta = {
   "name": "22222",
   "icon": "text",
   "description": "22222",
-  "version": "1.0.261124",
+  "version": "1.0.261125",
   "author": {
     "name": "ZZH"
   },
@@ -3254,6 +3254,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3434,6 +3435,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3540,6 +3542,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3645,6 +3648,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3751,6 +3755,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3857,6 +3862,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -4238,7 +4244,45 @@ function secondsInModelName(name) {
   const match = String(name || "").match(/-(\d+)s(?=-|$)/i);
   return match ? match[1] : "";
 }
+function usesVideoDurationRules(row) {
+  return row && row.billBySeconds === true && row.minSeconds !== undefined && billingKind(row) === "video";
+}
+function explicitVideoDuration(req, key) {
+  if (!req || !Object.prototype.hasOwnProperty.call(req, key)) return undefined;
+  const raw = req[key];
+  const value = (typeof raw === "number" || (typeof raw === "string" && /^\d+$/.test(raw.trim()))) ? Number(raw) : NaN;
+  if (!Number.isSafeInteger(value) || value <= 0) throw new Error(key + " 必须为正整数秒数");
+  return value;
+}
+function resolveBilledVideoDuration(row, req) {
+  const seconds = explicitVideoDuration(req, "seconds");
+  const duration = explicitVideoDuration(req, "duration");
+  if (seconds !== undefined && duration !== undefined && seconds !== duration) {
+    throw new Error("seconds 和 duration 必须一致");
+  }
+  const minimum = row.minSeconds;
+  const requested = seconds !== undefined ? seconds : duration;
+  if (requested !== undefined && requested < minimum) {
+    throw new Error("该模型最短支持 " + minimum + " 秒");
+  }
+  const mode = secondsUpstreamMode(row);
+  const named = Number(secondsInModelName(req && req.model));
+  const upstream = Number(secondsInModelName(row.upstream || (req && req.model)));
+  const fixed = mode === "off" || mode === "passthrough" ? upstream : 0;
+  const encoded = fixed || named;
+  if ((fixed && named && fixed !== named) || (encoded && requested !== undefined && encoded !== requested)) {
+    throw new Error("请求时长必须与模型的 " + encoded + " 秒档位一致");
+  }
+  if (mode === "off" && !fixed) throw new Error("该模型未配置上游时长传递方式");
+  const resolved = encoded || requested || row.defaultSeconds || upstream;
+  if (!Number.isSafeInteger(resolved) || resolved <= 0) {
+    throw new Error("该模型未配置默认时长，请传入 seconds 或 duration");
+  }
+  if (resolved < minimum) throw new Error("该模型最短支持 " + minimum + " 秒");
+  return resolved;
+}
 function resolveOutgoingSeconds(body, upstream, row) {
+  if (usesVideoDurationRules(row)) return String(resolveBilledVideoDuration(row, body));
   const fromModel = secondsInModelName(body && body.model) || secondsInModelName(upstream);
   if (fromModel) return fromModel;
   const fromSeconds = positiveSeconds(body && body.seconds);
@@ -5256,6 +5300,20 @@ function writeResponseFormat(body, req) {
   }
 }
 function writeOutgoingSeconds(body, row, seconds, req) {
+  if (usesVideoDurationRules(row)) {
+    const mode = secondsUpstreamMode(row);
+    delete body.seconds;
+    delete body.duration;
+    if (mode === "field") body.seconds = seconds;
+    if (mode === "passthrough") {
+      if (Object.prototype.hasOwnProperty.call(req, "seconds")) body.seconds = typeof req.seconds === "string" ? seconds : Number(seconds);
+      if (Object.prototype.hasOwnProperty.call(req, "duration")) body.duration = typeof req.duration === "string" ? seconds : Number(seconds);
+      if (body.seconds === undefined && body.duration === undefined && !secondsInModelName(row.upstream || req.model)) {
+        body.seconds = Number(seconds);
+      }
+    }
+    return;
+  }
   const mode = secondsUpstreamMode(row);
   if (mode === "passthrough") {
     if (req && Object.prototype.hasOwnProperty.call(req, "seconds")) body.seconds = req.seconds;
@@ -5535,6 +5593,7 @@ export function parseTaskResult(ctx, body) {
 }
 
 function billableSeconds(row, req) {
+  if (usesVideoDurationRules(row)) return resolveBilledVideoDuration(row, req);
   if (!row || row.billBySeconds !== true) return 1;
   const fromName = Number(secondsInModelName(req && req.model));
   if (isFinite(fromName) && fromName > 0) return fromName;
