@@ -605,6 +605,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -673,6 +674,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -741,6 +743,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -809,6 +812,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -879,6 +883,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -949,6 +954,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1019,6 +1025,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1089,6 +1096,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1159,6 +1167,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1229,6 +1238,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1299,6 +1309,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1367,6 +1378,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1435,6 +1447,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1503,6 +1516,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1573,6 +1587,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1643,6 +1658,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1713,6 +1729,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1781,6 +1798,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1849,6 +1867,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1917,6 +1936,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -1985,6 +2005,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2053,6 +2074,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2148,6 +2170,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2237,6 +2260,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2326,6 +2350,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2415,6 +2440,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2516,6 +2542,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2617,6 +2644,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2718,6 +2746,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2807,6 +2836,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2896,6 +2926,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -2985,6 +3016,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3074,6 +3106,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3163,6 +3196,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -3344,6 +3378,7 @@ const PROFILE = {
       "sendSeconds": false,
       "secondsUpstream": "off",
       "defaultSeconds": 0,
+      "minSeconds": 4,
       "billBySeconds": false,
       "requestCountField": "request_count",
       "billByImageCount": false,
@@ -5859,3 +5894,73 @@ export function buildContentRequest(ctx) {
     },
   };
 })();
+
+// Visual downstream usage v2
+function withVisualDownstreamUsage(render, protocol) {
+  function usageObject(value) {
+    return value && typeof value === "object" && !Array.isArray(value);
+  }
+  function usageValue(value, key, depth) {
+    if (depth > 8) return false;
+    if (value === null || typeof value === "boolean") return true;
+    if (typeof value === "number") return Number.isFinite(value) && value >= 0;
+    if (typeof value === "string") {
+      if (key === "modality" || key === "trafficType") return /^[A-Z_]{1,32}$/.test(value);
+      if (key === "semantic" || key === "usage_semantic") return /^(anthropic|gemini|openai)$/.test(value);
+      return (key === "source" || key === "usage_source") && /^(claude_messages|gemini_chat|oai_chat|oai_responses)$/.test(value);
+    }
+    if (Array.isArray(value)) return value.every(function (item) { return usageValue(item, "", depth + 1); });
+    return usageObject(value) && Object.keys(value).every(function (name) {
+      return /^[A-Za-z][A-Za-z0-9_]{0,63}$/.test(name) && usageValue(value[name], name, depth + 1);
+    });
+  }
+  return function (ctx, task) {
+    const result = render.call(this, ctx, task);
+    const body = task && task.data;
+    if (!task || task.status !== "SUCCESS" || !usageObject(result) || !usageObject(body)) return result;
+    const wraps = ["data", "result", "response", "extensions", "extra", "metadata", "meta"];
+    let fields = ["usage", "usageMetadata"];
+    let candidates = [body];
+    for (let depth = 0; depth <= 3 && fields.length && candidates.length; depth++) {
+      const next = [];
+      for (let i = 0; i < candidates.length && fields.length; i++) {
+        const candidate = candidates[i];
+        fields = fields.filter(function (key) {
+          const value = candidate[key];
+          if (!usageObject(value) || !Object.keys(value).length || JSON.stringify(value).length > 16384 || !usageValue(value, "", 0)) return true;
+          result[key] = value;
+          return false;
+        });
+        if (fields.length && depth < 3) {
+          wraps.forEach(function (key) { if (usageObject(candidate[key])) next.push(candidate[key]); });
+        }
+      }
+      candidates = next;
+    }
+    if (protocol === "openai_image") {
+      const upstream = result.usage || {};
+      const gemini = result.usageMetadata || {};
+      const counts = {};
+      function add(target, openAI, metadata) {
+        if (Number.isSafeInteger(upstream[target]) && upstream[target] >= 0) return;
+        const original = upstream[openAI];
+        const value = Number.isSafeInteger(original) ? original : gemini[metadata];
+        if (Number.isSafeInteger(value) && value >= 0) counts[target] = value;
+      }
+      add("input_tokens", "prompt_tokens", "promptTokenCount");
+      add("output_tokens", "completion_tokens", "candidatesTokenCount");
+      add("total_tokens", "total_tokens", "totalTokenCount");
+      if (Object.keys(counts).length) result.usage = Object.assign({}, upstream, counts);
+    }
+    return result;
+  };
+}
+if (typeof protocols !== "undefined" && protocols.openai_video && typeof protocols.openai_video.render === "function") {
+  protocols.openai_video.render = withVisualDownstreamUsage(protocols.openai_video.render);
+}
+
+// Visual downstream image usage bindings
+if (PROFILE.downstreamImageSync === true) {
+  protocols.openai_image.render = withVisualDownstreamUsage(protocols.openai_image.render, "openai_image");
+  protocols.openai_responses.renderFinal = withVisualDownstreamUsage(protocols.openai_responses.renderFinal);
+}
