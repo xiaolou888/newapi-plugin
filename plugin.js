@@ -4,7 +4,7 @@ export const meta = {
   "name": "22222",
   "icon": "text",
   "description": "22222",
-  "version": "1.0.261125",
+  "version": "1.0.261128",
   "author": {
     "name": "ZZH"
   },
@@ -3287,7 +3287,7 @@ const PROFILE = {
       "sendQuality": false,
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
+      "defaultSeconds": 10,
       "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -3469,7 +3469,7 @@ const PROFILE = {
       "sendQuality": false,
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
+      "defaultSeconds": 10,
       "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -3576,7 +3576,7 @@ const PROFILE = {
       "sendQuality": false,
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
+      "defaultSeconds": 10,
       "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -3682,7 +3682,7 @@ const PROFILE = {
       "sendQuality": false,
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
+      "defaultSeconds": 10,
       "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -3789,7 +3789,7 @@ const PROFILE = {
       "sendQuality": false,
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
+      "defaultSeconds": 10,
       "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -3896,7 +3896,7 @@ const PROFILE = {
       "sendQuality": false,
       "sendSeconds": false,
       "secondsUpstream": "passthrough",
-      "defaultSeconds": 0,
+      "defaultSeconds": 10,
       "minSeconds": 4,
       "billBySeconds": true,
       "requestCountField": "request_count",
@@ -5344,7 +5344,7 @@ function writeOutgoingSeconds(body, row, seconds, req) {
       if (Object.prototype.hasOwnProperty.call(req, "seconds")) body.seconds = typeof req.seconds === "string" ? seconds : Number(seconds);
       if (Object.prototype.hasOwnProperty.call(req, "duration")) body.duration = typeof req.duration === "string" ? seconds : Number(seconds);
       if (body.seconds === undefined && body.duration === undefined && !secondsInModelName(row.upstream || req.model)) {
-        body.seconds = Number(seconds);
+        body.seconds = seconds;
       }
     }
     return;
